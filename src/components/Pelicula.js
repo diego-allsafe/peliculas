@@ -4,9 +4,10 @@ import React from 'react';
 //usando JSX  como lenguaje de renderizacion de 
 //componentes dentro de REACT
 
-function Pelicula() {
+function Pelicula(props) {
 //estas variables van a ir modificandose segun la pelic.
-  let rating=5.8;
+  //let rating=5.8;
+  //Aca comenzamos a trabajar con props(propiedades)
   let generos=["Accion","Drama"];
 //ademas lo interesante es que podemos intervenir 
 //nuestro JSX, con variables, impresiones, repeticiones,
@@ -14,8 +15,8 @@ function Pelicula() {
 //se vuelve sumamente comodas para utilizar con REACT)
   return (
     <div>
-        <h2 className="sarasa">Titulo de la Pelicula!!</h2>
-        <p>Rating: {rating}</p>
+        <h2 className="sarasa">{props.titulo}</h2>
+        <p>Rating: {props.rating}</p>
         <ul>
             { generos.map(genero=><li>{genero}</li>)}
         </ul>
