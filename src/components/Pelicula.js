@@ -8,7 +8,11 @@ function Pelicula(props) {
 //estas variables van a ir modificandose segun la pelic.
   //let rating=5.8;
   //Aca comenzamos a trabajar con props(propiedades)
-  let generos=["Accion","Drama"];
+ 
+//  let generos=["Accion","Drama"];
+//ahora vamos a hacer que por props reciba tambien los
+//generos
+
 //ademas lo interesante es que podemos intervenir 
 //nuestro JSX, con variables, impresiones, repeticiones,
 //y condicionales(donde herramientas como el if ternario 
@@ -18,7 +22,7 @@ function Pelicula(props) {
         <h2 className="sarasa">{props.titulo}</h2>
         <p>Rating: {props.rating}</p>
         <ul>
-            { generos.map(genero=><li>{genero}</li>)}
+            { props.generos.map((genero, i)=><li key={genero + i} >{genero}</li>)}
         </ul>
     </div>
   );
