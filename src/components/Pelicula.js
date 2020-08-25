@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import "./Peliculas.css";
 
 //Aca estamos extendiendo nuestra caja de herramientas
 //usando JSX  como lenguaje de renderizacion de 
