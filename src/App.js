@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import ContenedorPublicidad from './components/ContenedorPublicidad';
 
 import TiraPeliculas from './components/TiraPeliculas';
 
@@ -8,8 +8,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <main>
+            <ContenedorPublicidad>
+                <h2>Wooow!! Publicidad</h2>
+            </ContenedorPublicidad>
             <TiraPeliculas />
             <TiraPeliculas />
+            <ContenedorPublicidad>
+              <ul>
+                <li>Public 1</li>
+                <li>Public 2</li>
+                <li>Public 3</li>
+              </ul>
+            </ContenedorPublicidad>
         </main>
       </header>
     </div>
