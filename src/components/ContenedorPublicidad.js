@@ -11,6 +11,6 @@ function ContenedorPublicidad(props) {
 
     </div>
   );
-}
+ }
 
 export default ContenedorPublicidad;
