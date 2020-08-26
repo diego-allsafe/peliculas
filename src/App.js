@@ -1,6 +1,6 @@
 import React from 'react';
 import ContenedorPublicidad from './components/ContenedorPublicidad';
-
+import Contador from './components/Contador';
 import TiraPeliculas from './components/TiraPeliculas';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
             </ContenedorPublicidad>
             <TiraPeliculas />
             <TiraPeliculas />
+            <Contador inicial={0}/>
             <ContenedorPublicidad>
               <ul>
                 <li>Public 1</li>
