@@ -12,7 +12,6 @@ function App() {
                 <h2>Wooow!! Publicidad</h2>
             </ContenedorPublicidad>
             <TiraPeliculas />
-            <TiraPeliculas />
             <Contador inicial={0}/>
             <ContenedorPublicidad>
               <ul>

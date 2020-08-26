@@ -12,12 +12,26 @@ class Contador extends Component {
     }
   }
 
+  incrementar(){
+    this.setState({numero:this.state.numero + 1})
+  }
+
+  decrementar(){
+    this.setState({numero:this.state.numero - 1})
+  }
+
   render() {
+    console.log("Estoy renderizando");
+
     return (
       <div>
-          <p>Soy en número {this.state.numero}</p>
+          <p>Soy el número {this.state.numero}</p>
+          <button onClick={() => this.incrementar} >Incrementar</button>
+          <button onClick={() => this.decrementar} >Decrementar</button>
       </div>
     );
+  }
 }
+
 
 export default Contador;
