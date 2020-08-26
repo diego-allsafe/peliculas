@@ -20,6 +20,14 @@ class Contador extends Component {
     this.setState({numero:this.state.numero - 1})
   }
 
+  componentDiMount(){
+    console.log("Me monte!!");
+  }
+
+  componentDiUpdate(){
+    console.log("Me actualice!!");
+  }
+
   render() {
     console.log("Estoy renderizando");
 
