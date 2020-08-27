@@ -2,6 +2,7 @@ import React from 'react';
 import ContenedorPublicidad from './components/ContenedorPublicidad';
 import Contador from './components/Contador';
 import TiraPeliculas from './components/TiraPeliculas';
+import Gif from './components/gif';
 
 function App() {
   return (
