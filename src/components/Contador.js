@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import "./Peliculas.css";
 
 
@@ -34,8 +33,8 @@ class Contador extends Component {
     return (
       <div>
           <p>Soy el número {this.state.numero}</p>
-          <button onClick={() => this.incrementar} >Incrementar</button>
-          <button onClick={() => this.decrementar} >Decrementar</button>
+          <button onClick={() => this.incrementar()} >Incrementar</button>
+          <button onClick={() => this.decrementar()} >Decrementar</button>
       </div>
     );
   }
