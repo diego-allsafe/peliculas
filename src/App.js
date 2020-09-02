@@ -1,8 +1,7 @@
 import React from 'react';
 import ContenedorPublicidad from './components/ContenedorPublicidad';
 import TiraPeliculas from './components/TiraPeliculas';
-import Contador from './components/Contador';
-import Gif from './components/Gif.js';
+import Gif from './components/gif';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
                 <h2>Wooow!! Publicidad</h2>
             </ContenedorPublicidad>
             <TiraPeliculas />
-            <Contador inicial={0}/>
             <ContenedorPublicidad>
               <ul>
                 <li>Public 1</li>
