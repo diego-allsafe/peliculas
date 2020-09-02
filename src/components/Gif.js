@@ -27,6 +27,7 @@ class Gif extends Component {
         gif:data.data.image_url
       }
     )
+    console.log("data",this.state.gif)
   }
 
   componentDiUpdate(){
@@ -41,7 +42,7 @@ class Gif extends Component {
     if (this.state.gif == "") {
         contenido = <p>Cargando...</p>
     } else {
-        contenido = <img src={this.state.gif}></img>
+        contenido = <img src={this.state.gif} alt="gif"/>
     }
 
     return (
