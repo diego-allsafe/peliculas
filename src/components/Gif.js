@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class Gif extends Component {
 
@@ -18,6 +19,10 @@ class Gif extends Component {
 
   componentDiMount(){
     console.log("Me monte!!");
+    this.traerGifNuevo()
+  }
+
+  traerGifNuevo(){
     this.apiCall('https://api.giphy.com/v1/gifs/random?api_key=EnY6NrEIjXkvff6T92lNZ3SQSnEiupBA&tag=&rating=g',this.mostrarGif);
   }
 
@@ -32,6 +37,7 @@ class Gif extends Component {
 
   componentDiUpdate(){
     console.log("Me actualice!!");
+    alert("Tengo un gif nuevo!")
   }
 
   render() {
@@ -48,7 +54,7 @@ class Gif extends Component {
     return (
       <div>
             {contenido}
-            <button>Random Gif!</button>
+            <button onClick => { () => traerGifNuevo() }>Random Gif!</button>
       </div>
       
     );
