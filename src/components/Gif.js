@@ -13,12 +13,12 @@ class Gif extends Component {
     fetch(url)
         .then(response=> response.json())
         .then(data=>consecuencia(data))
-        .catch(error=>console.error(error))
+        .catch(error=>console.log(error))
   }
 
   componentDiMount(){
     console.log("Me monte!!");
-    this.apiCall('https://api.giphy.com/v1/gifs/trending?api_key=EnY6NrEIjXkvff6T92lNZ3SQSnEiupBA&limit=25&rating=g',this.mostrarGif);
+    this.apiCall('https://api.giphy.com/v1/gifs/random?api_key=EnY6NrEIjXkvff6T92lNZ3SQSnEiupBA&tag=&rating=g',this.mostrarGif);
   }
 
   mostrarGif=(data)=>{
@@ -42,7 +42,7 @@ class Gif extends Component {
     if (this.state.gif == "") {
         contenido = <p>Cargando...</p>
     } else {
-        contenido = <img src={this.state.gif} alt="gif"/>
+        contenido = <img src={this.state.gif}></img>
     }
 
     return (
